@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Low</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="owl.carousel.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex v-center">
+                <div class="header-item item-left">
+                    <div class="logo">
+                        <span>our web</span>
+                    </div>
+                </div>
+                <!-- menu start here -->
+                <div class="header-item">
+
+                    <div class="menu-overlay">
+                    </div>
+                    <nav class="menu">
+                        <div class="mobile-menu-head">
+                            <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                            <div class="current-menu-title"></div>
+                            <div class="mobile-menu-close">&times;</div>
+                        </div>
+                        <ul class="menu-main">
+                            <li class="menu-item-has-children">
+                                <div class="dropdown-center">
+                                    <a class=" " data-bs-toggle="dropdown" aria-expanded="false">
+                                        Loaction <i id="chevronRight" class="fa-solid fa-chevron-right"
+                                            onclick="toggleRotate()"></i>
+
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <div class="dropdown-center">
+                                    <a class=" " data-bs-toggle="dropdown" aria-expanded="false">
+                                        Practice Areas <i id="chevronRights" class="fa-solid fa-chevron-right"
+                                            onclick="toggleRotateS()"></i>
+
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Attorneys</a>
+
+                            </li>
+                            <li class="menu-item-has-children">
+
+                                <div class="dropdown-center">
+                                    <a class=" " data-bs-toggle="dropdown" aria-expanded="false">
+                                        About us <i id="chevronRightd" class="fa-solid fa-chevron-right"
+                                            onclick="toggleRotated()"></i>
+
+
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Action two</a></li>
+                                        <li><a class="dropdown-item" href="#">Action three</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="">Our Result</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <span class="fa-solid fa-magnifying-glass " type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"></span>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- menu end here -->
+                <div class="header-item item-right">
+                    <div class="mobile-menu-trigger">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="wrapper">
+
+                        <form action="#">
+                            <div class="field">
+                                <input type="text" required>
+                                <label>Email Address</label>
+                            </div>
+                            <div class="field">
+                                <input type="password" required>
+                                <label>Password</label>
+                            </div>
+                            <div class="content">
+                                <div class="pass-link">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <input type="submit" value="Login">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- header ends here ----------------------------->
+    <section id="brxe-kwvhlm" class="brxe-section campaign">
+        <div id="brxe-nhrlcp" class="brxe-container campaign_inner">
+            <div id="brxe-ncojlx" class="brxe-div campaign_left">
+                <div id="brxe-hdteaf" class="brxe-text-basic campaign_pretext">Boost lead generation on your law firm
+                    website</div>
+                <h1 id="brxe-ooiptc" class="brxe-post-title campaign_title">Digital Services For Law Firms</h1>
+                <div id="brxe-uphasv" class="brxe-text-basic campaign_subtext">Discussing constitutional &amp; principles, rights, and freedoms</div>
+                <div id="brxe-nuwkca" class="brxe-block campaign_metrics">
+                    <div class="brxe-rvcyvy brxe-div campaign_metric">
+                        <div class="brxe-ctojpj brxe-text-basic campaign_metric_number">100k+</div>
+                        <div class="brxe-ipsxiq brxe-text-basic campaign_mdesc">Monthly Clicks</div>
+                    </div>
+                    <div class="brxe-rvcyvy brxe-div campaign_metric">
+                        <div class="brxe-ctojpj brxe-text-basic campaign_metric_number">2.5 M+</div>
+                        <div class="brxe-ipsxiq brxe-text-basic campaign_mdesc">Monthly Impressions</div>
+                    </div>
+                    <div class="brxe-rvcyvy brxe-div campaign_metric">
+                        <div class="brxe-ctojpj brxe-text-basic campaign_metric_number">500+</div>
+                        <div class="brxe-ipsxiq brxe-text-basic campaign_mdesc">Monthly Leads Generated</div>
+                    </div>
+                    <div class="brxe-rvcyvy brxe-div campaign_metric">
+                        <div class="brxe-ctojpj brxe-text-basic campaign_metric_number">10+</div>
+                        <div class="brxe-ipsxiq brxe-text-basic campaign_mdesc">Satisfied Clients</div>
+                    </div>
+                </div>
+            </div>
+            <div id="brxe-xalxlm" class="brxe-div campaign_right">
+                <div id="brxe-mwdehr" class="brxe-text-basic campaign_form_heading">Get A Free LAW Audit</div>
+                <div id="brxe-wqhgtl" class="brxe-shortcode campaign_form">
+                    <script data-perfmatters-type="text/javascript" data-cfasync="false" data-no-optimize="1"
+                        data-no-defer="1" data-no-minify="1" data-rocketlazyloadscript="1"></script>
+                    <div class="gf_browser_unknown gform_wrapper gravity-theme gform-theme--no-framework"
+                        data-form-theme="gravity-theme" data-form-index="0" id="gform_wrapper_2">
+                        <div id="gf_2" class="gform_anchor" tabindex="-1"></div>
+                        <form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2"
+                            action="/campaign/seo-for-law-firms/#gf_2" data-formid="2" novalidate="">
+                            <div class="gform-body gform_body">
+                                <div id="gform_fields_2"
+                                    class="gform_fields top_label form_sublabel_below description_below">
+                                    <div id="field_2_1"
+                                        class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                        data-js-reload="field_2_1"><label class="gfield_label gform-field-label"
+                                            for="input_2_1">Full Name<span class="gfield_required"><span
+                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                        <div class="ginput_container ginput_container_text"><input name="input_1"
+                                                id="input_2_1" type="text" value="" class="large"
+                                                placeholder="Your Name*" aria-required="true" aria-invalid="false">
+                                        </div>
+                                    </div>
+                                    <div id="field_2_9"
+                                        class="gfield gfield--type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                        data-js-reload="field_2_9"><label class="gfield_label gform-field-label"
+                                            for="input_2_9">Phone No.<span class="gfield_required"><span
+                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                        <div class="ginput_container ginput_container_text"><input name="input_9"
+                                                id="input_2_9" type="text" value="" class="large"
+                                                placeholder="Phone No.*" aria-required="true" aria-invalid="false">
+                                        </div>
+                                    </div>
+                                    <div id="field_2_3"
+                                        class="gfield gfield--type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                        data-js-reload="field_2_3"><label class="gfield_label gform-field-label"
+                                            for="input_2_3">Email*<span class="gfield_required"><span
+                                                    class="gfield_required gfield_required_text">(Required)</span></span></label>
+                                        <div class="ginput_container ginput_container_text"><input name="input_3"
+                                                id="input_2_3" type="text" value="" class="large" placeholder="Email*"
+                                                aria-required="true" aria-invalid="false"> </div>
+                                    </div>
+                                    <div id="field_2_8"
+                                        class="gfield gfield--type-text gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                        data-js-reload="field_2_8"><label class="gfield_label gform-field-label"
+                                            for="input_2_8">Message</label>
+                                        <div class="ginput_container ginput_container_text"><input name="input_8"
+                                                id="input_2_8" type="text" value="" class="large" placeholder="Message"
+                                                aria-invalid="false"> </div>
+                                    </div>
+                                    <div id="field_2_10"
+                                        class="gfield gfield--type-captcha gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"
+                                        data-js-reload="field_2_10"><label class="gfield_label gform-field-label"
+                                            for="input_2_10">CAPTCHA</label>
+                                        <div id="input_2_10" class="ginput_container ginput_recaptcha gform-initialized"
+                                            data-sitekey="6Lcs2bUeAAAAAEmrBtEUxypKX01wX-sUk_Ttvl6x" data-theme="light"
+                                            data-tabindex="-1" data-size="invisible" data-badge="bottomright">
+                                            <div class="grecaptcha-badge" data-style="bottomright"
+                                                style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+                                                <div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256"
+                                                        height="60" role="presentation" name="a-8q3ci32fcnls"
+                                                        frameborder="0" scrolling="no"
+                                                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lcs2bUeAAAAAEmrBtEUxypKX01wX-sUk_Ttvl6x&amp;co=aHR0cHM6Ly9yaWNoYWdvLmNvbTo0NDM.&amp;hl=en&amp;v=rz4DvU-cY2JYCwHSTck0_qm-&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=mi375i32fkpg"
+                                                        tabindex="-1"></iframe></div>
+                                                <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
+                                                    name="g-recaptcha-response" class="g-recaptcha-response"
+                                                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                            </div><iframe style="display: none;"></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- <div id="field_2_11"
+                                        class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below gfield_visibility_visible"
+                                        data-js-reload="field_2_11"><label class="gfield_label gform-field-label"
+                                            for="input_2_11">Email</label>
+                                        <div class="ginput_container"><input name="input_11" id="input_2_11" type="text"
+                                                value="" autocomplete="new-password"></div>
+                                        <div class="gfield_description" id="gfield_description_2_11">This field is for
+                                            validation purposes and should be left unchanged.</div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="gform_footer top_label">
+                                <button class="btn btn-primary">Submit</button>
+                                <input type="hidden" name="gform_ajax"
+                                    value="form_id=2&amp;title=&amp;description=&amp;tabindex=0">
+                                <input type="hidden" class="gform_hidden" name="is_submit_2" value="1">
+                                <input type="hidden" class="gform_hidden" name="gform_submit" value="2">
+
+                                <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+                                <input type="hidden" class="gform_hidden" name="state_2"
+                                    value="WyJbXSIsImRmYzI3MTgwMjEyZGZiZDQwZjg0Mzg3YzM5NjhmZTM1Il0=">
+                                <input type="hidden" class="gform_hidden" name="gform_target_page_number_2"
+                                    id="gform_target_page_number_2" value="0">
+                                <input type="hidden" class="gform_hidden" name="gform_source_page_number_2"
+                                    id="gform_source_page_number_2" value="1">
+                                <input type="hidden" name="gform_field_values" value="">
+
+                            </div>
+                            <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+                                <label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8"
+                                        maxlength="100"></textarea></label><input type="hidden" id="ak_js_1"
+                                    name="ak_js" value="1712657242394">
+
+                            </p>
+                        </form>
+                    </div>
+                    <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_2"
+                        id="gform_ajax_frame_2"
+                        title="This iframe contains the logic required to handle Ajax powered Gravity Forms."></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-3">
+        <div class="row text-center">
+            <span class="fs-5" style="color: #8c8c8c;">VERDICTS & SETTLEMENTS</span>
+            <span class="fs-2">Our results speak for themselves</span>
+            <span class="f-2">Results may vary depending on your particular facts and legal circumstances.</span>
+        </div>
+        <div class="row  column-gap-3">
+            <div class="col-md-6 law">
+                <img src="img/lawer.jpg">
+            </div>
+            <div class="col-md-4">
+                <div class="cards">
+                    <div class="card-box">
+                        <p><b>Jacob T.Rodgers v. City Of Gainesville</b></p>
+                        <p class="f-4">Morgan & Morgan received $120M for a 25-yr-old paralyzed by a vehicle. The trial
+                            focused on
+                            driver negligence and city responsibility.</p>
+                        <hr>
+                        <div class="d-flex justify-content-between dp-1">
+                            <div>
+                                <span class="m-3">$120 Million</span>
+                                <span class="m-4">verdict</span>
+                            </div>
+                            <div>
+                                <span class="m-3">Pre-Trial Offer</span>
+                                <span class="m-4">$20,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 add">
+                        <p>Jessica Long v. The Travelers Home</p>
+                        <hr>
+                    </div>
+                    <div class="mt-5 add">
+                        <p>Carol Reed v. Life Care Centers of America </p>
+                        <hr>
+                    </div>
+                    <div class="mt-5 add">
+                        <p>Carol Reed v. Life Care Centers of America </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------- It's easy to get started. --------------------------->
+        <div class="row">
+            <div class="it-1">
+                <p>
+                    <span class="it-text">HOW IT WORKS</span>
+                    <span>It's easy to get started.</span>
+                    <span>The Fee Is Free Unless You Win .</span>
+                    <span class="it-text-2">Results may vary depending on your particular facts and legal
+                        circumstances.</span>
+                </p>
+                <!------------------------- card section start here ----------------------------->
+                <div class="card-section">
+                    <div class="main-card">
+                        <div class="text-card">
+                            <span class="step">STEP 1</span>
+                            <span class="card-p">Submit<br>
+                                your claim</span>
+                            <span>With a free case evaluation, submitting your case is easy with Morgan & Morgan.</span>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="text-card">
+                            <span class="step">STEP 2</span>
+                            <span class="card-p">We take<br>
+                                action</span>
+                            <span>Our dedicated team gets to work investigating your claim.</span>
+                        </div>
+                    </div>
+                    <div class="main-card">
+                        <div class="text-card">
+                            <span class="step">STEP 3</span>
+                            <span class="card-p">We fight<br>
+                                for you</span>
+                            <span>If we take on the case, our team fights to get you the results you deserve.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- single card start here -->
+                <div class="second-card">
+                    <section class="second-card-flex">
+                        <div class="c-2">
+                            <span>SETTLEMENT</span>
+                            <span class="fs-1">$40,000,000</span>
+                            <span><button class="btn">Customer Story &nbsp;<i
+                                        class="fa-solid fa-arrow-up-long"></i></button></span>
+                        </div>
+                        <div>
+                            <span class="fs-4">“I was in a difficult situation when I was injured by a faulty product. I
+                                was hesitant
+                                to seek legal help but with the help of Morgan & Morgan, they made the process easy.
+                                They took immediate action and got me the compensation I deserved. I couldn't have done
+                                it without them. I highly recommend their services.”
+                                Estate of Patricia </span>
+                            <span style="font-size: 13px;">Estate of Patricia Allen v. RJ Reynolds, et al. | 2014</span>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+        <!------------------------------- clint success section start here -->
+        <div class="row s-3">
+            <section class="clint">
+                <div>
+                    <h1>Client success<br>
+                        stories that inspire <br>and<b class="fw-bold"> drive change</b></h1>
+
+                </div>
+                <div class="ex-3">
+                    <h4>Explore over 55,000 5-star reviews and 800 client testimonials to discover why people trust
+                        Morgan & Morgan.</h4>
+                    <div class="b-flex"><button class="btn">View all stories &nbsp; &nbsp;<i
+                                class="fa-solid fa-arrow-up-long"></i></button><button class="btn btn-2">Get in touch
+                            &nbsp; &nbsp;<i class="fa-solid fa-arrow-up-long"></i></button></div>
+                </div>
+            </section>
+
+        </div>
+        <div class="row s-3">
+            <div class="itme-1">
+                <div class="owl-carousel slider_carousel">
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-1.jpg" alt="">
+
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-2.jpg" alt="">
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-3.jpg" alt="">
+
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-4.jpg" alt="">
+
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-5.jpg" alt="">
+
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-6.jpg" alt="">
+
+                    </div>
+                    <div class="card_box">
+                        <img class="img-fluid w-100" src="img/law-7.jpg" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container fluid">
+        <div class="row c-4">
+            <div class="text-1">
+                <h4>PRACTICE AREAS</h4>
+                <p>Legal representation for <br>wide range of practice areas</span></p>
+
+            </div>
+            <div>
+                <p>We fight to get you what you deserve.</p>
+                <p class="text-p">Results may vary depending on your particular facts and legal circumstances.</p>
+            </div>
+        </div>
+        <div class="practice">
+            <div>
+                <span class="fs-4">20 Billion +</span>
+                <span>recovered over 35 years</span>
+            </div>
+            <div>
+                <span class="fs-4">1,000+</span>
+                <span>attorneys at Morgan and Morgan</span>
+            </div>
+            <div>
+                <span class="fs-4">5,000</span>
+                <span>daily calls</span>
+            </div>
+            <div>
+                <span class="fs-4">700,000</span>
+                <span>total verdicts and settlements</span>
+            </div>
+        </div>
+        <marquee>
+            <div class="practice-1">
+                <div class="page-1">
+                    <h3>Medical <br>Malpractice</h3>
+                    <p>Don’t settle for <br>a mistake made by a<br> medical professional.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Labor and<br> Employment</h3>
+                    <p>We stand up to even<br> the biggest bosses. <br>See how we can help.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Insurance Claims</h3>
+                    <p>Are you a victim of a<br> car accident? Seek justice.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Birth Injury</h3>
+                    <p>Get the help your <br>child needs and deserves.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Medical <br>Malpractice</h3>
+                    <p>Don’t settle for a <br>mistake made by a <br>medical professional..</p>
+                </div>
+                <div class="page-1">
+                    <h3>Truck <br>Accidents</h3>
+                    <p>Careless truck drivers can<br> be deadly. Don’t<br> let them get away with it.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Wrongful <br>Death</h3>
+                    <p>A loss can be even harder<br> when someone is at fault.<br> Let us help.</p>
+                </div>
+            </div>
+        </marquee>
+        <marquee>
+            <div class="practice-1 ">
+                <div class="page-1">
+                    <h3>Slip & Fall</h3>
+                    <p>We hold property owners<br> accountable for negligence.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Slip & Fall</h3>
+                    <p>We hold property owners <br>accountable for negligence.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Car <br>Accidents</h3>
+                    <p>Are you a victim of a<br> car accident? Seek justice.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Personal <br>Injury</h3>
+                    <p>Injured in an accident?<br> See how we can help.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Motorcycle<br> Accidents</h3>
+                    <p>The real danger of motorcycles<br> can be other vehicles.<br> If injured, seek justice.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Truck <br>Accidents</h3>
+                    <p>Careless truck drivers can<br> be deadly. Don’t<br> let them get away with it.</p>
+                </div>
+                <div class="page-1">
+                    <h3>Wrongful <br>Death</h3>
+                    <p>A loss can be even harder<br> when someone is at fault.<br> Let us help.</p>
+                </div>
+            </div>
+        </marquee>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="res-1">
+                <span>RESOURCES & INSIGHTS</span>
+                <h1>Let us help you get started</h1>
+                <span>Discover the resources you need to succeed with Morgan & Morgan by browsing our resource center,
+                    educational videos, digital formats, and customer stories.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="explore-1">
+                <div class="child-explore d-1">
+                    <h2>Explore</h2>
+                    <p>Stay up-to-date with the latest legal news & trends with our informative blog section. Read
+                        expert insights, case updates & more to stay ahead of the game.</p>
+                    <ul>
+                        <li>Blog <i class="fa-solid fa-arrow-up-long"></i></li>
+                        <li>Testimonials <i class="fa-solid fa-arrow-up-long"></i></li>
+                        <li>FAQ <i class="fa-solid fa-arrow-up-long"></i></li>
+                        <li>In the media <i class="fa-solid fa-arrow-up-long"></i></li>
+                        <li>Results <i class="fa-solid fa-arrow-up-long"></i></li>
+                    </ul>
+                </div>
+                <div class="child-explore d-2">
+                    <h2>Learn</h2>
+                    <p>Stay informed with our legal resources section, covering a wide range of topics from personal
+                        injury to employment law. Access helpful guides, articles & more.</p>
+                    <ul>
+                        <li>Car Accidents <i class="fa-solid fa-arrow-up-long"></i>
+                        </li>
+                        <li>Personal Injury <i class="fa-solid fa-arrow-up-long"></i>
+                        </li>
+                        <li>Slip & Falls <i class="fa-solid fa-arrow-up-long"></i>
+                        </li>
+                        <li>Truck Accident <i class="fa-solid fa-arrow-up-long"></i>
+                        </li>
+                        <li>Labor & Employment <i class="fa-solid fa-arrow-up-long"></i></li>
+                    </ul>
+                </div>
+                <div class="child-explore d-3">
+                    <span class="ps-3">FEATURED BLOG</span>
+                    <h2>How You Can Protect Your Mental Health While Navigating Social Media</h2>
+                    <p>Tiktok, Instagram, Facebook, Twitter, Snapchat, BeReal, and even LinkedIn are all social media
+                        sites that have</p>
+                    <ul>
+                        <li>Learn more <i class="fa-solid fa-arrow-up-long"></i></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <section class="fot-flex">
+                    <div>
+                        <h4>About Us</h4>
+                        <span>Our Results</span>
+                        <span>Who We Are</span>
+                        <span>In the community</span>
+                        <span>Pound law</span>
+                        <span>Referrals</span>
+                        <span>Careers | Join our team</span>
+                        <span>Shop</span>
+                        <span>Testimonials</span>
+                    </div>
+
+
+                    <div>
+                        <h4>Resources</h4>
+                        <span>Blog</span>
+                        <span>Testimonials</span>
+                        <span>FAQ</span>
+                        <span>In the media</span>
+                        <span>TV commercials</span>
+                        <span>Accessibility</span>
+                        <span>Complaints</span>
+                        <span>Opt Out</span>
+                        <span>Sitemap</span>
+                    </div>
+                    <div>
+                        <h4>Quick Links</h4>
+                        <span>Car Accident Lawyer</span>
+                        <span>Slip and Fall Lawyer</span>
+                        <span>Truck Accident Lawyer</span>
+                        <span>Truck Accident Lawyer</span>
+                        <span>Labor and Employment Lawyer</span>
+                        <span>Medical Malpractice Lawyer</span>
+                        <span>Brain Injury Lawyer</span>
+
+                    </div>
+
+
+                    <div class="icon-1">
+                        <h4>Social</h4>
+                        <div class="icon-2">
+                            <div class="social"><a> <i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="social"> <a> <i class="fa-brands fa-facebook"></i> </a>
+                            </div>
+                            <div class="social">
+                                <a> <i class="fa-brands fa-square-youtube"></i></a>
+                            </div>
+                            <div class="social">
+                                <a> <i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="social">
+                                <a> <i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer-img">
+            <div class="same">
+                <img src="img/images (1).jpg">
+            </div>
+            <div class="same">
+                <img src="img/images.jpg">
+            </div>
+            <div class="same">
+                <img src="img/mockup-3d-logo-facade-sign-600nw-2046330740.webp">
+            </div>
+            <div class="same">
+                <img src="img/Nicest-3D-Clothes-Logo-Mockup.jpg">
+            </div>
+            <div class="same">
+                <img src="img/translucent-3d-logo-mockup_125540-1859.avif">
+            </div>
+        </div>
+
+        <div class="input-felid">
+            <input type="text" placeholder="Email address" name="Email address">
+            <input type="submit" value="subscribe">
+        </div>
+
+        <div class="text-3">
+            <span>20 North Orange Ave, Suite 1600, Orlando, FL 32801</span>
+            <span>For a full list of locations in your area please visit our Office Locations page.</span>
+            <span>This site is designed to be accessible to and usable by people with and without disabilities.
+                Please contact us if you encounter an accessibility or</span>
+            <span>usability issue on this site. Attorney advertising. Prior results do not guarantee a similar
+                outcome.</span>
+
+        </div>
+
+
+        <div class="container">
+            <div class="footer-img">
+                <div>
+                    <p>©2024 Morgan and Morgan, P.A. All rights reserved</p>
+                </div>
+                <div>
+                    <p>Privacy Policy</p>
+                </div>
+                <div>
+                    <p>Disclaimers and Terms of Use</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuMain = menu.querySelector(".menu-main");
+        const goBack = menu.querySelector(".go-back");
+        const menuTrigger = document.querySelector(".mobile-menu-trigger");
+        const closeMenu = menu.querySelector(".mobile-menu-close");
+        let subMenu;
+        menuMain.addEventListener("click", (e) => {
+            if (!menu.classList.contains("active")) {
+                return;
+            }
+            if (e.target.closest(".menu-item-has-children")) {
+                const hasChildren = e.target.closest(".menu-item-has-children");
+                showSubMenu(hasChildren);
+            }
+        });
+        goBack.addEventListener("click", () => {
+            hideSubMenu();
+        })
+        menuTrigger.addEventListener("click", () => {
+            toggleMenu();
+        })
+        closeMenu.addEventListener("click", () => {
+            toggleMenu();
+        })
+        document.querySelector(".menu-overlay").addEventListener("click", () => {
+            toggleMenu();
+        })
+        function toggleMenu() {
+            menu.classList.toggle("active");
+            document.querySelector(".menu-overlay").classList.toggle("active");
+        }
+        function showSubMenu(hasChildren) {
+            subMenu = hasChildren.querySelector(".sub-menu");
+            subMenu.classList.add("active");
+            subMenu.style.animation = "slideLeft 0.5s ease forwards";
+            const menuTitle = hasChildren.querySelector("i").parentNode.childNodes[0].textContent;
+            menu.querySelector(".current-menu-title").innerHTML = menuTitle;
+            menu.querySelector(".mobile-menu-head").classList.add("active");
+        }
+
+        function hideSubMenu() {
+            subMenu.style.animation = "slideRight 0.5s ease forwards";
+            setTimeout(() => {
+                subMenu.classList.remove("active");
+            }, 300);
+            menu.querySelector(".current-menu-title").innerHTML = "";
+            menu.querySelector(".mobile-menu-head").classList.remove("active");
+        }
+
+        window.onresize = function () {
+            if (this.innerWidth > 991) {
+                if (menu.classList.contains("active")) {
+                    toggleMenu();
+                }
+
+            }
+        }
+        var rotated = false;
+
+        function toggleRotate() {
+            const chevronRight = document.getElementById('chevronRight');
+            if (!rotated) {
+                chevronRight.style.transform = "rotate(90deg)";
+            } else {
+                chevronRight.style.transform = "rotate(0deg)";
+            }
+            rotated = !rotated;
+        }
+        var rotated = false;
+
+        function toggleRotateS() {
+            const chevronRights = document.getElementById('chevronRights');
+            if (!rotated) {
+                chevronRights.style.transform = "rotate(90deg)";
+            } else {
+                chevronRights.style.transform = "rotate(0deg)";
+            }
+            rotated = !rotated;
+        }
+        var rotated = false;
+
+        function toggleRotated() {
+            const chevronRightd = document.getElementById('chevronRightd');
+            if (!rotated) {
+                chevronRightd.style.transform = "rotate(90deg)";
+            } else {
+                chevronRightd.style.transform = "rotate(0deg)";
+            }
+            rotated = !rotated;
+        }
+
+
+        function slider_carouselInit() {
+            $('.owl-carousel.slider_carousel').owlCarousel({
+                dots: false,
+                loop: true,
+                margin: 30,
+                stagePadding: 2,
+                autoplay: false,
+                nav: true,
+                navText: ["<i class='far fa-arrow-alt-circle-left'></i>", "<i class='far fa-arrow-alt-circle-right'></i>"],
+                autoplayTimeout: 1500,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    992: {
+                        items: 5
+                    }
+                }
+            });
+        }
+        slider_carouselInit();
+
+    </script>
+
+</body>
+
+</html>
